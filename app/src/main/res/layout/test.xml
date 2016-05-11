@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <!--<com.me.obo.circleboardimage.XferModeView.XferModeView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+
+    <ImageView
+        android:id="@+id/e1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/head" />
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_toRightOf="@id/e1"
+        android:text="+"
+        android:textSize="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <com.me.obo.circleboardimage.XferModeView.GeView
+        android:id="@+id/e2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_toRightOf="@id/t1"
+        attr:corner_x="40dp"
+        attr:corner_y="40dp" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_toRightOf="@id/e2"
+        android:text="="
+        android:textSize="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <com.me.obo.circleboardimage.circleview.RoundImageView
+        android:id="@+id/e3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_toRightOf="@id/t2"
+        android:src="@drawable/head"
+        attr:corner_x="40dp"
+        attr:corner_y="40dp" />
+
+    <RelativeLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.me.obo.circleboardimage.circleview.RoundImageView
+            android:id="@+id/e4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/head"
+            attr:corner_x="40dp"
+            attr:corner_y="40dp"/>
+
+        <TextView
+            android:id="@+id/t4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_toRightOf="@id/e4"
+            android:text="+"
+            android:textSize="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <com.me.obo.circleboardimage.XferModeView.GeView
+            android:id="@+id/e5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_toRightOf="@id/t4"
+            attr:border_width="3dp"
+            attr:corner_y="40dp"
+            attr:corner_x="40dp"
+            attr:border_color="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/t5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_toRightOf="@id/e5"
+            android:text="="
+            android:textSize="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <com.me.obo.circleboardimage.circleview.RoundImageView
+            android:id="@+id/e6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_toRightOf="@id/t5"
+            android:src="@drawable/head"
+            attr:border_width="3dp"
+            attr:corner_y="40dp"
+            attr:corner_x="40dp"
+            attr:border_color="#FFFFFF" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
