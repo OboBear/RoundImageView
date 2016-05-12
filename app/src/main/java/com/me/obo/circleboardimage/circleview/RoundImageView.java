@@ -51,6 +51,7 @@ public class RoundImageView extends ImageView {
         // 创建普通画笔
         if (mNomalPaint == null) {
             mNomalPaint = new Paint();
+            mNomalPaint.setAntiAlias(true);
         }
 
         // 创建遮罩画笔
@@ -66,6 +67,7 @@ public class RoundImageView extends ImageView {
             mPaintBoard.setColor(mBorderColor);
             mPaintBoard.setStyle(Paint.Style.STROKE);
             mPaintBoard.setStrokeWidth(mBorderValue);
+            mPaintBoard.setAntiAlias(true);
         }
     }
 
